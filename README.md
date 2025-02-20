@@ -19,7 +19,7 @@ By leveraging Python, the project automates data retrieval, processing, and visu
 ## Dashboard Visualizations
 
 ### U.S. and PADD Refinery Utilization Trends
-![U.S. Total Utilization](./images/us_total.png)
+![U.S. Total Utilization](./images/refinery_dashboard.png)
 
 ### Regional Comparisons
 ![PADD Comparison](./images/padd_comparison.png)
@@ -28,18 +28,21 @@ By leveraging Python, the project automates data retrieval, processing, and visu
 
 <table>
 <tr>
-<td><img src="./images/padd1.png" alt="PADD 1 Trends"/></td>
-<td><img src="./images/padd2.png" alt="PADD 2 Trends"/></td>
+<td><img src="./images/padd_1_utilization.png" alt="PADD 1 Trends"/></td>
+<td><img src="./images/padd_2_utilization.png" alt="PADD 2 Trends"/></td>
 </tr>
 <tr>
-<td><img src="./images/padd3.png" alt="PADD 3 Trends"/></td>
-<td><img src="./images/padd4.png" alt="PADD 4 Trends"/></td>
+<td><img src="./images/padd_3_utilization.png" alt="PADD 3 Trends"/></td>
+<td><img src="./images/padd_4_utilization.png" alt="PADD 4 Trends"/></td>
 </tr>
 <tr>
-<td><img src="./images/padd5.png" alt="PADD 5 Trends"/></td>
+<td><img src="./images/padd_5_utilization.png" alt="PADD 5 Trends"/></td>
 <td></td>
 </tr>
 </table>
+
+### Volatility Analysis
+![PADD Volatility](./images/padd_volatility.png)
 
 ## Methodology
 
@@ -106,8 +109,9 @@ for name, series_id in series_ids.items():
 
 ## Author
 
-Antonio Pavolini
+Antonio Pavoni
 
 ## License
 
 This project is open-source under the MIT License.
+
