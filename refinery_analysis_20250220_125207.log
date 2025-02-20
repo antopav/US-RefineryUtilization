@@ -1,0 +1,22 @@
+2025-02-20 12:52:07,115 - INFO - Starting data fetch
+2025-02-20 12:52:07,116 - INFO - Fetching data for U.S. Total with series WPULEUS3
+2025-02-20 12:52:12,166 - INFO - Successfully processed data for U.S. Total: 1789 rows
+2025-02-20 12:52:12,166 - INFO - Fetching data for PADD 1 with series W_NA_YUP_R10_PER
+2025-02-20 12:52:15,144 - INFO - Successfully processed data for PADD 1: 767 rows
+2025-02-20 12:52:15,145 - INFO - Fetching data for PADD 2 with series W_NA_YUP_R20_PER
+2025-02-20 12:52:19,708 - INFO - Successfully processed data for PADD 2: 767 rows
+2025-02-20 12:52:19,710 - INFO - Fetching data for PADD 3 with series W_NA_YUP_R30_PER
+2025-02-20 12:52:24,084 - INFO - Successfully processed data for PADD 3: 767 rows
+2025-02-20 12:52:24,084 - INFO - Fetching data for PADD 4 with series W_NA_YUP_R40_PER
+2025-02-20 12:52:26,920 - INFO - Successfully processed data for PADD 4: 767 rows
+2025-02-20 12:52:26,920 - INFO - Fetching data for PADD 5 with series W_NA_YUP_R50_PER
+2025-02-20 12:52:29,810 - INFO - Successfully processed data for PADD 5: 767 rows
+2025-02-20 12:52:29,811 - INFO - Generating dashboard
+2025-02-20 12:52:30,015 - INFO - Added trend plot for U.S. Total
+2025-02-20 12:52:30,056 - INFO - Added trend plot for PADD 1
+2025-02-20 12:52:30,097 - INFO - Added trend plot for PADD 2
+2025-02-20 12:52:30,139 - INFO - Added trend plot for PADD 3
+2025-02-20 12:52:30,205 - INFO - Added trend plot for PADD 4
+2025-02-20 12:52:30,246 - INFO - Added trend plot for PADD 5
+2025-02-20 12:52:30,298 - INFO - Added enhanced stacked comparison plot
+2025-02-20 12:52:30,350 - INFO - Added volatility bar chart
