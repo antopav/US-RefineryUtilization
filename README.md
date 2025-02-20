@@ -1,82 +1,60 @@
-U.S. Refinery Utilization Analysis
+# U.S. Refinery Utilization Analysis
 
-Overview
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+## Overview
 
 This project provides an analytical dashboard for U.S. refinery utilization, leveraging data from the U.S. Energy Information Administration (EIA). The analysis covers the entire U.S. refining system and individual Petroleum Administration for Defense Districts (PADDs), offering insights into refinery capacity utilization trends and volatility.
 
 By leveraging Python, the project automates data retrieval, processing, and visualization, making it an efficient tool for understanding refinery performance over time.
 
-Key Features
+## Key Features
 
-Automated Data Retrieval: Fetches weekly refinery utilization data from the EIA API.
+- **Automated Data Retrieval**: Fetches weekly refinery utilization data from the EIA API
+- **Time-Series Analysis**: Tracks refinery utilization trends from 2010 to present
+- **Volatility Analysis**: Measures fluctuations in refinery utilization rates across PADD regions
+- **Comparative Insights**: Highlights differences in refinery performance across key regions
+- **Custom Visualizations**: Provides clear graphical representations of utilization trends and volatility
 
-Time-Series Analysis: Tracks refinery utilization trends from 2010 to present.
+## Dashboard Visualizations
 
-Volatility Analysis: Measures fluctuations in refinery utilization rates across PADD regions.
+### U.S. and PADD Refinery Utilization Trends
+![U.S. Total Utilization](./images/us_total.png)
 
-Comparative Insights: Highlights differences in refinery performance across key regions.
+### Regional Comparisons
+![PADD Comparison](./images/padd_comparison.png)
 
-Custom Visualizations: Provides clear graphical representations of utilization trends and volatility.
+### Individual PADD Trends
 
-Data Source
+<table>
+<tr>
+<td><img src="./images/padd1.png" alt="PADD 1 Trends"/></td>
+<td><img src="./images/padd2.png" alt="PADD 2 Trends"/></td>
+</tr>
+<tr>
+<td><img src="./images/padd3.png" alt="PADD 3 Trends"/></td>
+<td><img src="./images/padd4.png" alt="PADD 4 Trends"/></td>
+</tr>
+<tr>
+<td><img src="./images/padd5.png" alt="PADD 5 Trends"/></td>
+<td></td>
+</tr>
+</table>
 
-U.S. Energy Information Administration (EIA): Data is sourced via the EIA API, ensuring up-to-date and reliable insights.
+## Methodology
 
-Methodology
+### Data Processing
+1. Fetches weekly utilization data for the U.S. and PADDs
+2. Cleans and formats data for consistency
+3. Calculates 4-week moving averages and volatility bands
+4. Generates comparative visualizations
 
-Data Processing
+### Data Source
+- **U.S. Energy Information Administration (EIA)**: Data is sourced via the EIA API, ensuring up-to-date and reliable insights
 
-Fetches weekly utilization data for the U.S. and PADDs.
+## Implementation Example
 
-Cleans and formats data for consistency.
-
-Calculates 4-week moving averages and volatility bands.
-
-Generates comparative visualizations.
-
-Visualization
-
-Utilization Trends: Time-series plots of refinery utilization rates.
-
-Volatility Analysis: Measurement of weekly fluctuations.
-
-Regional Comparisons: Side-by-side views of PADD refinery performance.
-
-Dashboard Visualizations
-
-U.S. and PADD Refinery Utilization Trends
-
-
-
-PADD Volatility Comparison
-
-
-
-Refinery Utilization by PADD
-
-
-
-Individual PADD Trends
-
-PADD 1
-
-
-PADD 2
-
-
-PADD 3
-
-
-PADD 4
-
-
-PADD 5
-
-
-Code Example
-
-This Python snippet demonstrates how refinery utilization data is retrieved and analyzed:
-
+```python
 import requests
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -111,29 +89,25 @@ for name, series_id in series_ids.items():
     df['4W_MA'] = df['Utilization_Rate'].rolling(window=4).mean()
     df['Volatility'] = df['Utilization_Rate'].rolling(window=4).std()
     dfs[name] = df
+```
 
-Applications
+## Applications
 
-Market Analysis: Identifying refinery bottlenecks and capacity constraints.
+- **Market Analysis**: Identifying refinery bottlenecks and capacity constraints
+- **Risk Management**: Assessing operational volatility in refining infrastructure
+- **Trading Insights**: Understanding supply disruptions and seasonal refinery patterns
+- **Policy & Infrastructure Planning**: Evaluating refinery utilization trends for investment decisions
 
-Risk Management: Assessing operational volatility in refining infrastructure.
+## Future Development
 
-Trading Insights: Understanding supply disruptions and seasonal refinery patterns.
+- **Forecasting Models**: Implement predictive analytics for refinery utilization
+- **Integration with Crude Oil Prices**: Correlate refinery utilization with oil market dynamics
+- **Expanded Geographical Coverage**: Include international refinery utilization metrics
 
-Policy & Infrastructure Planning: Evaluating refinery utilization trends for investment decisions.
-
-Future Improvements
-
-Forecasting Models: Implement predictive analytics for refinery utilization.
-
-Integration with Crude Oil Prices: Correlate refinery utilization with oil market dynamics.
-
-Expanded Geographical Coverage: Include international refinery utilization metrics.
-
-Author
+## Author
 
 Antonio Pavolini
 
-License
+## License
 
 This project is open-source under the MIT License.
